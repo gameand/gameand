@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content
+        ="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+  
+    <style>
+        *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    background: url(elq.jpg);
+}
+header{
+	width: 100%;
+	height: 90px;
+    background-color: #0b132b;
+
+}
+.interior{
+	max-width: 100%;
+	padding: 0 10px;
+	margin: auto;
+}
+.logo{
+	float: left;
+	padding: 5px 20px 0;
+}
+.logo img{
+	height: 80px;
+}
+.logo img:hover{
+	transform: scale(1.1);
+}
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #00c9bd;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .hijos{
+	display: block;
+}
+.navegacion .submenu .hijos{
+	display: none;
+	background: #0b132b;
+	position: absolute;
+	width: 100%;
+}
+.navegacion .submenu .hijos li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .submenu .hijos li a{
+	display: block;
+}
+        .container {
+            text-align: center;
+            border-color: rgb(139, 16, 0) black;
+            border-width: 90px;
+            border-style: solid;
+            overflow: hidden;
+            background: url(ski.jpg);
+            padding: 30px;
+        }
+  
+        .dice {
+            text-align: center;
+            display: inline-block;
+            margin: 25px;
+        }
+  
+        body {
+            background-color: black;
+            margin: 0;
+        }
+  
+        h1 {
+            
+            text-shadow: 5px 0 #9d9ea0;
+            font-size: 40px;
+            color: black;
+            font-family: fantasy;
+            background: url(holas.jpg);
+            text-align: center;
+            border: 15px groove rgb(177, 103, 6);
+            padding: 40px;
+        }
+  
+        p {
+            font-size: 2rem;
+            color: orange;
+            font-family: "Indie Flower", cursive;
+        }
+  
+        img {
+            width: 100%;
+        }
+  
+        .bottom {
+            padding-top: 30px;
+            background: url(holasso.jpg);
+            text-align: center;
+            border: 15px groove rgb(177, 103, 6);
+            padding: 60px;
+        }
+  
+        .butn {
+            background: black;
+            font-family: fantasy;
+            border-radius: 7px;
+            color: #ffff;
+            font-size: 30px;
+            padding: 16px 25px 16px 25px;
+            text-decoration: none;
+        }
+  
+        .butn:hover {
+            background: #232931;
+            text-decoration: none;
+        }
+    </style>
+</head>
+  
+<body>
+    <header>
+        <div class="interior">
+          
+          <nav class="navegacion">
+            <ul>
+              <li><a href="index.html" target="blank">JUEGO JAVASCRIPT</a></li>
+              <li class="submenu">
+                <a href="" target="blank">EL HOMBRE QUE CALCULABA</a>
+                <ul class="hijos">
+                  <li><a href="index1.html">CAPITULO IV</a></li>
+                  <li><a href="Index2.html">CAPITULO XVII</a></li>
+                </ul>
+          </nav>
+        </div>
+      </header>
+    
+    
+        <h1>BIENVENID@!!!</h1>
+    <div class="container">
+        <div class="dice">
+            <p class="Player1"></p>
+            <img class="img1" src="dice6.png">
+        </div>
+  
+        <div class="dice">
+            <p class="Player2"></p>
+            <img class="img2" src="dice6.png">
+        </div>
+        
+        <div class="dice">
+            <p class="Player3"></p>
+            <img class="img3" src="dice6.png">
+        </div>
+    </div>
+    
+    <div class="bottom">
+        <button type="button" class="butn"
+            onClick="rollTheDice()">
+            PRUEBA TU SUERTE
+        </button>
+    </div>
+    
+  
+    <script>
+  
+        var player1 = "Player 1";
+        var player2 = "Player 2";
+        var player3 = "Player 3";
+  
+        
+        // Function to roll the dice
+        function rollTheDice() {
+            setTimeout(function () {
+                var randomNumber1 = Math.floor(Math.random() * 6) + 1;
+                var randomNumber2 = Math.floor(Math.random() * 6) + 1;
+                var randomNumber3 = Math.floor(Math.random() * 6) + 1;
+  
+                document.querySelector(".img1").setAttribute("src",
+                    "dice" + randomNumber1 + ".png");
+  
+                document.querySelector(".img2").setAttribute("src",
+                    "dice" + randomNumber2 + ".png");
+
+                document.querySelector(".img3").setAttribute("src",
+                    "dice" + randomNumber3 + ".png");
+  
+                if (randomNumber1 == randomNumber2 && randomNumber2 == randomNumber3 && randomNumber3 == randomNumber1) {
+                    document.querySelector("h1").innerHTML = "¡¡¡ FELICIDADES ,GANASTE (•‿•) !!!";
+        
+                }else {
+                    document.querySelector("h1").innerHTML
+                        = ("¡PERDISTE ¯|_(ツ)_/¯, VUELVE A INTENTARLO !");
+                }
+            }, 10);
+        }
+    </script>
+</body>
+  
+</html>

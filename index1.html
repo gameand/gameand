@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El hombre que calculaba cap4</title>
+</head>
+<body>
+    <style>
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    background: url(elq.jpg);
+}
+header{
+	width: 100%;
+	height: 90px;
+	background-color: #0b132b;
+}
+.interior{
+	max-width: 100%;
+	padding: 0 10px;
+	margin: auto;
+}
+.logo{
+	float: left;
+	padding: 5px 20px 0;
+}
+.logo img{
+	height: 80px;
+}
+.logo img:hover{
+	transform: scale(1.1);
+}
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #00c9bd;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .hijos{
+	display: block;
+}
+.navegacion .submenu .hijos{
+	display: none;
+	background: #0b132b;
+	position: absolute;
+	width: 100%;
+}
+.navegacion .submenu .hijos li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .submenu .hijos li a{
+	display: block;
+}
+.conteni{
+    grid-template-columns: auto auto auto;
+    display: grid;
+    align-items: start;
+    grid-gap: 1em;
+    grid-template-rows: minmax(10px auto);
+    padding: 20px;
+}
+.conteni div:hover{
+    border: 7px solid rgb(161, 132, 0);
+}
+.centrar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+.form-register {
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+.pie {
+    border-color: orange black;
+    border-width: 40px;
+    border-style: groove solid;
+    background-color: rgb(165, 42, 42);
+    color: aliceblue;
+    text-align: center;
+}
+h1{
+	color: red;
+	font-size: 60px;
+	text-align: center;
+	font-family: fantasy;
+	padding: 12px;
+}
+h2{
+	color: rgb(7, 1, 54);
+	font-size: 40px;
+	text-align: center;
+	font-family: fantasy;
+	padding: 12px;
+}
+h3{
+	color: rgb(1, 5, 61);
+	font-size: 30px;
+	font-family: fantasy;
+	padding-top: 12px;
+	padding-left: 100px;
+}
+p{
+	padding-left: 100px;
+	color: rgb(95, 62, 2);
+	padding-bottom: 20px;
+	font-size: 28px;
+	font-family: fantasy;
+}
+    </style>
+    <header>
+        <div class="interior">
+          
+          <nav class="navegacion">
+            <ul>
+              <li><a href="index.html" target="blank">JUEGO JAVASCRIPT</a></li>
+              <li class="submenu">
+                <a href="" target="blank">EL HOMBRE QUE CALCULABA</a>
+                <ul class="hijos">
+                  <li><a href="index1.html">CAPITULO IV</a></li>
+                  <li><a href="Index2.html">CAPITULO XVII</a></li>
+                </ul>
+          </nav>
+        </div>
+      </header>
+      <h1>EL HOMBRE QUE CALCULABA<br/> 
+        CAPITULO IV</h1>
+      <h2>RESUMEN</h2>
+      <p>
+    Tres días después, nos acercábamos a las ruinas de una pequeña aldea denominada Sippar 
+	cuando encontramos caído en el camino a un pobre viajero, con las ropas desgarradas y al parecer 
+	gravemente herido. Su estado era lamentable. Acudimos en socorro del infeliz y él nos narró luego sus desventuras.
+
+	Se llamaba Salem Nasair, y era uno de los más ricos mercaderes de Bagdad. Al regresar de Basora, pocos días antes,
+	con una gran caravana, por el camino de el-Hilleh, fue atacado por una chusma de nómadas persas del desierto. 
+	La caravana fue saqueada y casi todos sus componentes perecieron a manos de los beduinos. Él- el jeque - consiguió
+	escapar milagrosamente, oculto en la arena, entre los cadáveres de sus esclavos. Al concluir la narración de su desgracia,
+	nos preguntó con voz ansiosa:<br/>
+
+    - ¿Traéis quizá algo de comer? Me estoy muriendo de hambre...<br/>
+
+    - Me quedan tres panes -respondí.<br/>
+
+    - Yo llevo cinco, dijo a mi lado el Hombre que Calculaba.<br/>
+
+    - Pues bien, sugirió el jeque, yo os ruego que juntemos esos panes y hagamos un reparto equitativo. Cuando llegue a Bagdad 
+    prometo pagar con ocho monedas de oro todo el pan que coma.
+    </p>
+	<h2>IMAGENES</h2>
+	<div class="conteni">
+	    <div><img src="1.jpg" style="width: 100%;"></div>
+		<div><img src="2.jpg" style="width: 100%;"></div>
+		<div><img src="3.jpg" style="width: 100%;"></div>
+		<div><img src="4.jpg" style="width: 100%;"></div>
+		<div><img src="5.jpg" style="width: 100%;"></div>
+		<div><img src="6.jpg" style="width: 100%;"></div>
+   </div>
+   <h2>SOLUCION AL PROBLEMA DE LAS 8 MONEDAS Y LOS 8 PANES</h2>
+   <p>Aunque lo primero que uno piensa es que a el hombre que calculaba le tocaban 5 monedas y a Bagdali 3, esto es erroneo.
+   el hombre que calculaba dio 5 panes y Bagdali 3, entre las 3 personas partieron cada pan en 3 pedazos, el hombre que calculaba tenia 15
+   y su amigo bagdali 9 pedazos, total de 24 pedazos, cada quien comio a un pedazo de pan durante 8 dias, de los 15 pedazos que tenia el homre 
+   que calculaba, le sobraron 7, y a Bagdali de sus 9 pedazos le quedo solo 1, los cuales se los dieron al Jeque, por eso El hombre 
+   que calculaba recibiria 7 monedas por su 7 pedazos y Bagdali solo una por su unico pedazo.</p>
+   <iframe class="centrar" width="540" height="326" src="https://www.youtube.com/embed/AdJN_5K_igc" title="El hombre que calculaba capitulo 4 │ Clases de matemáticas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<h2>CODIGO DEL SCRIPT</h2>
+	<p>
+		function panes(){<br/>
+			var x1 = parseFloat(document.getElementById('hqc').value);<br/>
+            var x2 = parseFloat(document.getElementById('bere').value);<br/>
+            var x3 = parseFloat(document.getElementById('cpe').value);<br/>
+
+			var x4=x1*x3;<br/>
+			var x5=x2*x3;<br/>
+			var x6=x4+x5;<br/>
+			
+			//los dias que estuvieron de viaje en el desierto fueron 8 dias//<br/>
+			var x7=8<br/>
+			var x8=x4-x7<br/>
+			var x9=x5-x7<br/>
+
+			document.getElementById("demo").innerHTML = "Pedazos totales: "+x6;<br/>
+			document.getElementById("p1").innerHTML = "Pedazos de El hombre que calculaba: "+x4;<br/>
+			document.getElementById("p2").innerHTML = "Pedazos de Bagdali: "+x5;<br/>
+			document.getElementById("p3").innerHTML = "Monedas de oro para El hombre que calculaba: "+x8;<br/>
+			document.getElementById("p4").innerHTML = "Monedas de oro para Bagdali: "+x9;<br/>
+
+
+		}
+
+	</p>
+	<section class="form-register">
+		<h4>SOLUCION CON FORMULARIO</h4>
+		<input class="controls" type="number" name="hqc" id="hqc" placeholder="Panes del Hombre que calculaba">
+		<input class="controls" type="number" name="bere" id="bere" placeholder="Panes de Bagdali">
+		<input class="controls" type="number" name="cpe" id="cpe" placeholder="Cuantos eran ellos?">
+		<input class="botons" type="button" value="RESULTADO" onclick="panes();">
+	</section>
+	<h3>Total de pedazos partidos:</h3>
+	<p id="demo"></p>
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<h3>Monedas correspondientes para cada uno:</h3>
+	<p id="p3"></p>
+	<p id="p4"></p>
+	<script>
+		function panes(){
+			var x1 = parseFloat(document.getElementById('hqc').value);
+            var x2 = parseFloat(document.getElementById('bere').value);
+            var x3 = parseFloat(document.getElementById('cpe').value);
+
+			var x4=x1*x3;
+			var x5=x2*x3;
+			var x6=x4+x5;
+			
+			//los dias que estuvieron de viaje en el desierto fueron 8 dias//
+			var x7=8
+			var x8=x4-x7
+			var x9=x5-x7
+
+			document.getElementById("demo").innerHTML = "Pedazos totales: "+x6;
+			document.getElementById("p1").innerHTML = "Pedazos de El hombre que calculaba: "+x4;
+			document.getElementById("p2").innerHTML = "Pedazos de Bagdali: "+x5;
+			document.getElementById("p3").innerHTML = "Monedas de oro para El hombre que calculaba: "+x8;
+			document.getElementById("p4").innerHTML = "Monedas de oro para Bagdali: "+x9;
+
+
+		}
+	</script>
+<footer class="pie">DERECHOS DE AUTOR: EL HOMBRE QUE CALCULABA MALBA TAHAN</footer>
+</body>
+</html>
